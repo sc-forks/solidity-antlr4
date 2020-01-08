@@ -230,6 +230,7 @@ expression
   : expression ('++' | '--')
   | 'new' typeName
   | expression '[' expression ']'
+  | expression '[' expression? ':' expression? ']'
   | expression '(' functionCallArguments ')'
   | expression '.' identifier
   | '(' expression ')'
